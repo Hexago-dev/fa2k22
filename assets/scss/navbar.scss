@@ -1,0 +1,96 @@
+.tech-navbar {
+    width: 100%;
+    margin-top: 20px;
+    height: 64px;
+    // border-bottom: 1px solid #eee;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 12%;
+    .tech-navbar-brand {
+        .tech-navbar-brand-logo {
+            width: 120px;
+            height: auto;
+            -webkit-transition: width .4s ease-in-out;
+            -o-transition: width .4s ease-in-out;
+            transition: width .4s ease-in-out;
+        }
+    }
+    .tech-navbar-menu {
+        .menu-link {
+            text-decoration: none;
+            color: var(--secondary-color);
+            padding: 10px;
+            opacity: .5;
+            border-radius: 5px;
+            margin: 0 3px;
+            -webkit-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            position: relative;
+            &:hover {
+                opacity: 1;
+                &::after {
+                    width: 100%;
+                    height: 4px;
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    background: var(--primary-color);
+                }
+            }
+            &.active {
+                opacity: 1;
+                font-weight: 800;
+                color: var(--secondary-color);
+                &::after {
+                    width: 100%;
+                    height: 4px;
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    background: var(--primary-color);
+                }
+            }
+            // menu custom
+            font-family: 'Nunito',
+            sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+            text-align: center;
+            letter-spacing: 0.2px;
+        }
+    }
+    .tech-navbar-contact {
+        .menu-link {
+            background: var(--secondary-color);
+            text-decoration: none;
+            color: var(--secondary-color);
+            padding: 10px;
+            opacity: 1;
+            border-radius: 5px;
+            letter-spacing: .2px;
+            color: #fff;
+            -webkit-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            position: relative;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            &:hover {
+                background-color: var(--primary-color);
+            }
+        }
+    }
+}
