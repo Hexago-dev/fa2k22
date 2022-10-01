@@ -255,6 +255,11 @@
             &:last-child {
                 margin: 0 0 0 40px;
             }
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+            }
         }
     }
     a {
