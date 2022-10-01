@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: nunito;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: 50px;
+  background-color: black;
+}
+
+.container__team {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-winer {
+  position: relative;
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+  padding: 15px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.team-winer .team-winer-pub {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 45%;
+  grid-gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+.team-winer #scroll-down {
+  position: absolute;
+  bottom: 35px;
+  width: 42px;
+  height: 42px;
+  left: calc(50% - 21px);
+  border-radius: 100%;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+.team-winer #wave {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  transform: rotate(180deg);
+  bottom: -10px;
+  left: -25px;
+}
+.team-winer .winer-logo {
+  display: flex;
+  justify-content: flex-end;
+}
+.team-winer .winer-detail h1 {
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+.team-winer .winer-detail h1 span {
+  color: #2daae4;
+  text-decoration: underline;
+}
+.team-winer .winer-detail p {
+  width: 70%;
+  font-size: 1.2em;
+}
+.team-winer .winer-detail button {
+  min-width: 225px;
+  min-height: 50px;
+  font-size: 1.2em;
+  background-color: #2daae4;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 15px;
+  transition: background-color 0.4s ease;
+  transition: color 0.3s ease;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+.team-winer .winer-detail button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.team-player {
+  margin-top: 250px;
+}
+.team-player h1 {
+  text-align: center;
+  font-size: 4em;
+  color: #000000;
+}
+.team-player h1 span:first-child {
+  color: #2daae4;
+}
+.team-player h1 span:last-child {
+  text-decoration: underline;
+}
+.team-player .team-player-items {
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 25px;
+  margin-bottom: 45px;
+}
+.team-player .team-player-items .player-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.team-player .team-player-items .player-item .logo-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  width: 125px;
+  background-color: #fff;
+  border-radius: 100%;
+  object-fit: fill;
+  overflow: hidden;
+  border: 4px solid #2daae4;
+  cursor: pointer;
+}
+.team-player .team-player-items .player-item .logo-item img {
+  transform: scale(0.9);
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transition: transform 0.4s ease;
+}
+.team-player .team-player-items .player-item .logo-item:hover img {
+  transform: scale(1);
+}
+.team-player .team-player-items .player-item h2 {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 935px) {
+  .team-winer .team-winer-pub {
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-winer .team-winer-pub .winer-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .team-winer .team-winer-pub .winer-detail {
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 755px) {
+  .team-winer #scroll-down {
+    right: 50px;
+    bottom: 25px;
+    left: calc(75%);
+  }
+}
+footer {
+  width: 100vw;
+  height: 50px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=team.css.map */
